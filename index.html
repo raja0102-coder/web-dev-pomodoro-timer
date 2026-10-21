@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pomodoro-container">
+        <header>
+            <h1>Pomodoro Timer</h1>
+            <p id="timer-label">Time to focus!</p>
+        </header>
+
+        <div class="mode-selector">
+            <button class="mode-btn active" id="work-mode" onclick="setMode('work')">Work (25m)</button>
+            <button class="mode-btn" id="break-mode" onclick="setMode('break')">Break (5m)</button>
+        </div>
+
+        <div class="timer-display">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn" onclick="toggleTimer()">Start</button>
+            <button id="reset-btn" onclick="resetTimer()">Reset</button>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Developer Productivity Tools</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
